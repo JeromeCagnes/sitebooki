@@ -3,9 +3,9 @@
   font-family: 'Raleway', sans-serif;
 }
 html {
-  min-width: 1000px;
-  max-width: 1440px;
-  margin: auto;
+  max-width: 1460px;
+  margin-left: auto;
+  margin-right: auto;
 }
 :root {
   --main-color: #0065fc;
@@ -16,16 +16,17 @@ html {
 .fa-solid {
   color: var(--main-color);
 }
-
+/*Suppression marge body*/
 body {
-  display: flex;
-  justify-content: center;
+  margin: 0;
+  padding: 0 30px 0 30px;
+  background-color: white;
 }
 
 .main-container {
-  width: 100%;
   max-width: 1440px;
-  min-width: 1024px;
+  margin: auto;
+  padding: 0 2rem;
   box-sizing: border-box;
 }
 
@@ -38,6 +39,7 @@ body {
 
 ul {
   list-style-type: none;
+  display: flex;
 }
 
 a {
@@ -53,13 +55,14 @@ header {
 }
 
 header img {
-  height: 19px;
-  width: 62px;
-  margin: 30px 0 0 30px;
+  grid-area: logo;
+  padding: 0 3rem;
+  height: 2rem;
 }
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 69px;
   margin: 16px 42px;
 }
@@ -98,7 +101,7 @@ h1 + p {
 /************ section 1 = recherche **********/
 
 .search-form {
-  display: flex;
+  display: inline-flex;
   margin-top: 35px;
   margin-bottom: 0;
   justify-content: flex-start;
@@ -179,17 +182,20 @@ input:-webkit-autofill {
 
 .list-filtre {
   display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   padding-left: 0;
   margin-left: 15px;
+
   justify-content: space-between;
   width: 690px;
-  height: 50px;
+
   cursor: pointer;
 }
 
 .filtres {
   display: flex;
+  flex-wrap: wrap;
   border: 2px solid #d9d9d9;
   border-radius: 25px; /**** plutôt que d'utiliser 4x border top/bottom-left/right-radius : 25px; *****/
   align-items: center;
@@ -259,6 +265,13 @@ input:-webkit-autofill {
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  cursor: pointer;
+  opacity: 0.8;
+}
+.card:hover {
+  opacity: 1;
+  transition: transform 0.5s;
+  transform: scale(1.03);
 }
 
 .card img,
@@ -316,6 +329,7 @@ input:-webkit-autofill {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   box-sizing: border-box;
+
   /**** je rajoute un box-sizing pour que l'image ne déborde plus de son cadre ***/
 }
 
@@ -399,6 +413,12 @@ input:-webkit-autofill {
   box-sizing: border-box;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   border-radius: 20px;
+  opacity: 0.8;
+}
+.cards:hover {
+  opacity: 1;
+  transition: transform 0.5s;
+  transform: scale(1.03);
 }
 
 /**** Activités à Marseille ****/
@@ -472,7 +492,7 @@ input:-webkit-autofill {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -506,6 +526,5 @@ input:-webkit-autofill {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-  /* ... */
+@media screen and (max-width: 767.98px) {
 }
