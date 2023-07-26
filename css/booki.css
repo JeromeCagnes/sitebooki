@@ -1,6 +1,9 @@
 /********* General (partie du code fournie depuis màj projet )***********/
 * {
   font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 html {
   max-width: 1460px;
@@ -19,14 +22,14 @@ html {
 /*Suppression marge body*/
 body {
   margin: 0;
-  padding: 0 30px 0 30px;
+  padding: 0 0px 0 0px;
   background-color: white;
 }
 
 .main-container {
   max-width: 1440px;
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
   box-sizing: border-box;
 }
 
@@ -45,6 +48,7 @@ ul {
 a {
   text-decoration: none;
   color: black;
+  margin-top: 16px;
 }
 
 /************ En-tête HEADER ************/
@@ -56,20 +60,23 @@ header {
 
 header img {
   grid-area: logo;
+
   padding: 0 3rem;
-  height: 2rem;
+  height: 1.5rem;
+  margin-top: 20px;
 }
 
 nav ul {
   display: flex;
   flex-wrap: wrap;
   gap: 69px;
-  margin: 16px 42px;
+  margin: 30px 42px;
 }
 
 nav a:hover {
   color: #0065fc;
-  box-shadow: 0px -2px 0px 0px #0065fc; /****** Mettre la barre au-dessus au passage de la souris *****/
+  border-top: solid #0065fc 5px;
+  /****** Mettre la barre au-dessus au passage de la souris *****/
   padding-top: 20px;
 }
 
@@ -167,17 +174,25 @@ input:-webkit-autofill {
 
 /*********** Menu FILTRES **********/
 
-.boxfiltre {
+.box-filtre {
   display: flex;
+
   box-sizing: border-box;
   margin-top: 35px;
   align-items: center;
   height: 50px;
 }
-
-.boxfiltre p {
+.titre-filtres {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-top: 100px;
+  margin-left: 5px;
+}
+.box-filtre p {
   font-weight: 700;
   font-size: 18px;
+  font-weight: 50;
 }
 
 .list-filtre {
@@ -186,15 +201,17 @@ input:-webkit-autofill {
   box-sizing: border-box;
   padding-left: 0;
   margin-left: 15px;
-
   justify-content: space-between;
   width: 690px;
 
   cursor: pointer;
 }
-
-.filtres {
+.container-filtres {
   display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.filtres {
   flex-wrap: wrap;
   border: 2px solid #d9d9d9;
   border-radius: 25px; /**** plutôt que d'utiliser 4x border top/bottom-left/right-radius : 25px; *****/
@@ -202,7 +219,7 @@ input:-webkit-autofill {
   justify-content: center;
   gap: 10px;
   font-weight: 700;
-  font-size: 17px;
+
   padding: 15px 19px;
 }
 
@@ -223,6 +240,7 @@ input:-webkit-autofill {
 
 .info-logement {
   display: flex;
+
   align-items: center;
 }
 
@@ -236,12 +254,18 @@ input:-webkit-autofill {
   justify-content: center;
   width: 25px;
   height: 25px;
+  margin-bottom: 65px;
 }
 
 .info-logement p {
-  margin-left: 10px; /***** Ou margin: 35px 0 35px 10px; ******/
-  margin-top: 35px;
-  margin-bottom: 35px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 80px;
+  padding-left: 10px;
+  font-weight: 100;
 }
 
 /****** Hebergements And Populaires (partie de code fournie)***********/
@@ -256,6 +280,7 @@ input:-webkit-autofill {
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
+  margin-top: 100px;
 }
 
 /******** CARDS (partie du code fournie + ajout perso .cards-img ***************/
@@ -304,6 +329,7 @@ input:-webkit-autofill {
   display: flex; /* solution que j'ai trouvé pour jouer sur la marge du bas (pas changer la hauteur section pour centrer "afficher plus" */
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 100px;
 }
 
 /*********** 2 div pour 2 rangées articles hebergements ************/
@@ -378,14 +404,14 @@ input:-webkit-autofill {
 }
 
 .populaires-cards img {
-  width: 33%;
-  height: 134px;
+  width: 100px;
+  height: 100px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
 .populaires-cards .card-content {
-  width: 67%;
+  width: 100%;
   padding-left: 15px;
   display: flex;
   flex-direction: column;
@@ -411,7 +437,8 @@ input:-webkit-autofill {
 .cards {
   background-color: white;
   box-sizing: border-box;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.07));
   border-radius: 20px;
   opacity: 0.8;
 }
@@ -427,7 +454,7 @@ input:-webkit-autofill {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 0 0px 0 0px;
   width: 100%;
 }
 
@@ -445,7 +472,7 @@ input:-webkit-autofill {
 
 .activites-cards img {
   width: 100%;
-  height: 380px;
+  height: 180px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   box-sizing: border-box;
@@ -493,6 +520,10 @@ input:-webkit-autofill {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {
+  .box-filtre {
+    margin-top: 30px;
+  }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -510,6 +541,7 @@ input:-webkit-autofill {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0;
   }
 
   .populaires-cards .card {
@@ -523,8 +555,22 @@ input:-webkit-autofill {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+  .section-activites {
+    padding: 0 15px;
+  }
+  .activites-cards .cards {
+    width: 22%;
+
+    margin-bottom: 20px;
+  }
+  .activites-cards .card-title {
+    font-size: 14px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
+  html {
+    max-width: 100%;
+  }
 }
