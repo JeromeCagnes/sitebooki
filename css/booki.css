@@ -48,7 +48,6 @@ ul {
 a {
   text-decoration: none;
   color: black;
-  margin-top: 16px;
 }
 
 /************ En-tête HEADER ************/
@@ -563,14 +562,57 @@ input:-webkit-autofill {
 @media screen and (max-width: 1024px) {
   .box-filtre {
     margin-top: 30px;
+    margin-bottom: -20px;
+  }
+  header img {
+    grid-area: logo;
+    align-self: flex-start;
+    height: 1.2rem;
+    margin-top: 26px;
+  }
+  h1 {
+    display: flex;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    padding-left: 17px;
+  }
+  .box-filtre h2 {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: -34px;
+    margin-left: 23px;
+    margin-bottom: 3px;
+    align-items: center;
+    height: 10px;
+    font-size: 18px;
+  }
+  .list-filtre {
+    margin-left: -62px;
+    margin-bottom: 5px;
+    gap: 14px;
+  }
+  .info-logement {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 48px;
+    margin-bottom: 0px;
+    gap: 10px;
+    justify-content: start;
   }
 
   .hebergements-and-populaires {
     flex-direction: column;
+    margin-right: 25px;
   }
 
   .hebergements {
     width: 100%;
+    margin-bottom: 5px;
+  }
+  .article-raw {
+    display: flex;
+    gap: 9px;
   }
 
   .populaires {
@@ -586,7 +628,7 @@ input:-webkit-autofill {
   }
 
   .populaires-cards .card {
-    width: 30%;
+    width: 32%;
   }
 
   .populaires-cards .card-title {
@@ -596,14 +638,36 @@ input:-webkit-autofill {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+  .activites-cards {
+    display: flex;
+    margin-bottom: 0;
+    margin-left: -10px;
+    justify-content: space-between;
+    width: 98%;
+  }
+  .activites-cards .cards {
+    width: 20%;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .activites-cards img {
+    width: 105%;
+    height: 174px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  .title-section {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: 23px;
+  }
   .section-activites {
     padding: 0 15px;
   }
-  .activites-cards .cards {
-    width: 22%;
 
-    margin-bottom: 20px;
-  }
   .activites-cards .card-title {
     font-size: 14px;
   }
