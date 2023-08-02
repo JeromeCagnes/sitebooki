@@ -674,12 +674,219 @@ input:-webkit-autofill {
 }
 
 /* Small devices (phones, less than 768px) */
-@media screen and (max-width: 767.98px) {
-  .marge-interieure {
+@media screen and (max-width: 768px) {
+  html {
+    min-width: 450px;
+    max-width: 768px;
+  }
+  header {
+    display: block;
+  }
+  header img {
+    height: 2rem;
+    padding-top: 15px;
+    display: block;
+
+    margin: 17px 175px;
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 105px;
+    margin: 32px 10px;
+  }
+  h1 {
+    font-size: 22px;
+    margin-right: 50px;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
+  p {
+    margin-left: 31px;
+    margin-top: 0px;
+  }
+
+  html,
+  body {
     width: 100%;
+    margin: -20px;
+    padding: 0;
+    padding-top: 20px;
+  }
+  .box-filtre {
+    margin-top: 38px;
+    margin-bottom: 25px;
   }
   .list-filtre {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 23px;
+    gap: -2px;
+    margin-right: 30px;
+  }
+  .filtres {
+    display: flex;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 13px 16px;
+    width: 154px;
+  }
+  .fa-solid {
+    font-weight: 900;
+    width: 11px;
+  }
+
+  .article-raw {
     flex-direction: column;
+    width: 1085px;
+    gap: 9px;
+    margin-left: -26px;
+  }
+  .hebergements {
+    order: 2;
+  }
+
+  .hebergements-and-populaires section {
+    background-color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 28px;
+    margin-left: 8px;
+    width: 383px;
+  }
+
+  .hebergements-cards .card {
+    display: flex;
+    margin-top: 30px;
+
+    margin-left: 15px;
+    width: 355px;
+    box-sizing: border-box;
+  }
+  .card {
+    border-radius: 20px;
+    padding: 5px;
+
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .info-logement {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 48px;
+    margin-bottom: 35px;
+    gap: 10px;
+    justify-content: start;
+  }
+
+  .section-title {
+    margin-left: -4px;
+    margin-bottom: 7px;
+  }
+  .fa-chart-line {
+    margin-right: -48px;
+  }
+
+  .populaires {
+    width: 1085px;
+    gap: 9px;
+    margin-left: -26px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 28px;
+    width: 348px;
+    order: 1;
+  }
+  .populaires-gris {
+    background-color: #f2f2f2;
+    margin-left: 6px;
+    margin-right: -39px;
+    margin-bottom: -67px;
+
+    width: 400px;
+  }
+  .populaires-title {
+    margin-top: -2px;
+    margin-bottom: -39px;
+    margin-left: 60px;
+  }
+
+  .populaires-cards img {
+    width: 112px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .populaires-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-right: 5px;
+    margin-left: 52px;
+    width: 1056px;
+    box-sizing: border-box;
+  }
+  .populaires-cards .card {
+    display: flex;
+    margin-top: 21px;
+    margin-bottom: 20px;
+    height: 153px;
+  }
+  .populaires-cards .card-title {
+    font-size: 16px;
+  }
+  .title-section {
+    margin-top: 60px;
+    margin-bottom: 52px;
+    margin-left: 30px;
+    font-size: 23px;
+  }
+  .cards {
+    margin-top: -6px;
+  }
+  .activites-cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -56px;
+    margin-left: -10px;
+    justify-content: space-between;
+    width: 1690px;
+  }
+  .activites-cards img {
+    width: 100%;
+    height: 174px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-sizing: border-box;
+  }
+  .activites-cards .card-title {
+    font-size: 16px;
+  }
+  .section-footer {
+    display: flex;
+    background: #f2f2f2;
+    margin-top: 75px;
+    box-sizing: border-box;
+  }
+  .section-footer {
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+    margin-top: 75px;
+    box-sizing: border-box;
+    width: 109%;
+  }
+  .footer-list {
+    width: 36%;
+    box-sizing: border-box;
   }
 }
