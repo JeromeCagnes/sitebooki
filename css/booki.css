@@ -761,6 +761,13 @@ input:-webkit-autofill {
 
     margin: 17px 175px;
   }
+  nav a:hover {
+    color: #0065fc;
+    border-top: solid #0065fc 5px;
+    /****** Mettre la barre en dessous au passage de la souris *****/
+    padding-top: 20px;
+  }
+
   nav ul {
     display: flex;
     flex-wrap: wrap;
