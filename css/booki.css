@@ -138,7 +138,28 @@ p {
   box-sizing: border-box;
 }
 
-.search-submit input {
+.search-submit-large input {
+  display: block;
+  width: 134px;
+  height: 50px;
+  margin-left: -4px;
+  padding-left: 15px;
+  border: 1px solid #0065fc;
+  border-radius: 0 15px 15px 0;
+  background: #0065fc;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  box-sizing: border-box;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.search-submit-large input:hover {
+  opacity: 1;
+}
+
+.search-submit-medium input {
+  display: none;
   width: 134px;
   height: 50px;
   margin-left: -4px;
@@ -152,11 +173,13 @@ p {
   cursor: pointer;
   opacity: 0.9;
 }
-
-.search-submit input:hover {
+.fas {
+  display: none;
+}
+.search-submit-medium input:hover {
+  display: none;
   opacity: 1;
 }
-
 button:active {
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
@@ -305,6 +328,14 @@ input:-webkit-autofill {
   box-sizing: border-box;
   margin-top: 28px;
   margin-left: 19px;
+}
+.populaires-gris {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-top: 27px;
+  margin-left: 13px;
 }
 
 /******** CARDS (partie du code fournie + ajout perso .cards-img ***************/
@@ -570,6 +601,47 @@ input:-webkit-autofill {
     height: 1.2rem;
     margin-top: 26px;
   }
+  .search-submit-large input {
+    width: 134px;
+    height: 50px;
+    margin-left: -4px;
+    border: 1px solid #0065fc;
+    border-radius: 0 15px 15px 0;
+    background: #0065fc;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  .search-submit-large input:hover {
+    opacity: 1;
+  }
+  .fas {
+    display: none;
+  }
+  .search-submit-medium input {
+    display: none;
+    width: 134px;
+    height: 50px;
+    margin-left: -4px;
+    border: 1px solid #0065fc;
+    border-radius: 0 15px 15px 0;
+    background: #0065fc;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  .search-submit-medium input:hover {
+    display: none;
+    opacity: 1;
+  }
+
   h1 {
     display: flex;
     font-size: 22px;
@@ -715,6 +787,56 @@ input:-webkit-autofill {
     padding: 0;
     padding-top: 20px;
   }
+  .fa-location-dot {
+    color: black;
+    font-size: larger;
+  }
+  .search-text input {
+    width: 231px;
+    height: 48px;
+    border: 1px solid #f2f2f2;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .fas {
+    width: 60px;
+    height: 48px;
+
+    border: 1px solid #0065fc;
+    border-radius: 0 15px 15px 0;
+    font-size: 20px;
+    color: #ffffff;
+    background: #0065fc;
+    font-weight: 700;
+    padding-left: 18px;
+    padding-top: 14px;
+
+    box-sizing: border-box;
+
+    opacity: 0.9;
+  }
+  .search-submit-large input {
+    display: none;
+    width: 134px;
+    height: 50px;
+    margin-left: -4px;
+    border: 1px solid #0065fc;
+    border-radius: 0 15px 15px 0;
+    background: #0065fc;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  .search-submit-medium {
+    display: block;
+  }
+
   .box-filtre {
     margin-top: 38px;
     margin-bottom: 25px;
@@ -737,10 +859,6 @@ input:-webkit-autofill {
     font-size: 15px;
     padding: 13px 16px;
     width: 154px;
-  }
-  .fa-solid {
-    font-weight: 900;
-    width: 11px;
   }
 
   .article-raw {
@@ -784,7 +902,7 @@ input:-webkit-autofill {
     display: flex;
     margin-left: 20px;
     margin-top: 48px;
-    margin-bottom: 35px;
+    margin-bottom: 7px;
     gap: 10px;
     justify-content: start;
   }
@@ -793,8 +911,9 @@ input:-webkit-autofill {
     margin-left: -4px;
     margin-bottom: 7px;
   }
+
   .fa-chart-line {
-    margin-right: -48px;
+    margin-right: -11px;
   }
 
   .populaires {
@@ -816,9 +935,9 @@ input:-webkit-autofill {
     width: 400px;
   }
   .populaires-title {
-    margin-top: -2px;
+    margin-top: -18px;
     margin-bottom: -39px;
-    margin-left: 60px;
+    margin-left: 26px;
   }
 
   .populaires-cards img {
@@ -840,6 +959,7 @@ input:-webkit-autofill {
     margin-top: 21px;
     margin-bottom: 20px;
     height: 153px;
+    margin-left: -30px;
   }
   .populaires-cards .card-title {
     font-size: 16px;
@@ -853,6 +973,13 @@ input:-webkit-autofill {
   .cards {
     margin-top: -6px;
   }
+  .afficher-plus {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: -12px;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
   .activites-cards {
     display: flex;
     flex-direction: column;
@@ -863,7 +990,7 @@ input:-webkit-autofill {
   }
   .activites-cards img {
     width: 100%;
-    height: 174px;
+    height: 151px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     box-sizing: border-box;
