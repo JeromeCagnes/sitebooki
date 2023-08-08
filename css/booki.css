@@ -110,7 +110,7 @@ p {
   display: flex;
   margin-top: 18px;
   margin-left: 21px;
-  margin-bottom: -19px;
+
   justify-content: flex-start;
   align-items: center;
 }
@@ -213,8 +213,6 @@ input:-webkit-autofill {
   font-size: 18px;
 }
 .titre-filtres {
-  display: flex;
-
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 5px;
@@ -328,6 +326,13 @@ input:-webkit-autofill {
   box-sizing: border-box;
   margin-top: 28px;
   margin-left: 19px;
+}
+.populaires-title {
+  display: flex;
+  white-space: nowrap;
+}
+.populaires-title .fa-chart-line {
+  margin-left: 100px;
 }
 .populaires-gris {
   background-color: var(--main-bg-color);
@@ -459,8 +464,8 @@ input:-webkit-autofill {
 
 .populaires-title {
   display: flex;
+
   justify-content: space-between;
-  align-items: center;
 }
 
 .populaires-cards .card {
@@ -689,7 +694,7 @@ input:-webkit-autofill {
 
   .populaires {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 0px;
   }
 
   .populaires-cards {
@@ -772,7 +777,7 @@ input:-webkit-autofill {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 105px;
+    width: 50%;
     margin: 32px 10px;
   }
   h1 {
@@ -790,7 +795,7 @@ input:-webkit-autofill {
   html,
   body {
     width: 100%;
-    margin: -20px;
+
     padding: 0;
     padding-top: 20px;
   }
@@ -827,18 +832,6 @@ input:-webkit-autofill {
   }
   .search-submit-large input {
     display: none;
-    width: 134px;
-    height: 50px;
-    margin-left: -4px;
-    border: 1px solid #0065fc;
-    border-radius: 0 15px 15px 0;
-    background: #0065fc;
-    font-weight: 700;
-    font-size: 18px;
-    color: #ffffff;
-    box-sizing: border-box;
-    cursor: pointer;
-    opacity: 0.9;
   }
   .search-submit-medium {
     display: block;
@@ -865,12 +858,12 @@ input:-webkit-autofill {
     font-weight: 700;
     font-size: 15px;
     padding: 13px 16px;
-    width: 154px;
+    width: 50%;
   }
 
   .article-raw {
     flex-direction: column;
-    width: 1085px;
+    width: 100%;
     gap: 9px;
     margin-left: -26px;
   }
@@ -919,27 +912,23 @@ input:-webkit-autofill {
     margin-bottom: 7px;
   }
 
-  .fa-chart-line {
-    margin-right: -11px;
-  }
-
   .populaires {
-    width: 1085px;
+    width: 100%;
     gap: 9px;
-    margin-left: -26px;
+
     border-radius: 20px;
     box-sizing: border-box;
     margin-top: 28px;
     width: 348px;
     order: 1;
   }
+
+  /*POPULAIRE GRIS VERS MOBILE*/
   .populaires-gris {
     background-color: #f2f2f2;
     margin-left: 6px;
-    margin-right: -39px;
-    margin-bottom: -67px;
 
-    width: 400px;
+    width: 100%;
   }
   .populaires-title {
     margin-top: -18px;
@@ -958,7 +947,7 @@ input:-webkit-autofill {
     margin-top: 30px;
     margin-right: 5px;
     margin-left: 52px;
-    width: 1056px;
+
     box-sizing: border-box;
   }
   .populaires-cards .card {
