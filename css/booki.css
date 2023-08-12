@@ -828,9 +828,12 @@ input:-webkit-autofill {
     justify-content: flex-start;
     margin: 0px;
   }
+  li {
+    border-bottom: 2px solid lightgray;
+  }
   nav ul {
     width: 100%;
-    border-bottom: 2px solid lightgray;
+
     padding-bottom: 2px;
   }
   nav li {
@@ -938,7 +941,6 @@ input:-webkit-autofill {
     border-radius: 25px;
     align-items: center;
 
-    gap: 26px;
     font-weight: 700;
     font-size: 15px;
 
@@ -964,13 +966,12 @@ input:-webkit-autofill {
     box-sizing: border-box;
     height: 43px;
     justify-content: left;
-    gap: 10px;
   }
 
   .article-raw {
     flex-direction: column;
     width: 100%;
-    gap: 9px;
+
     margin-left: -26px;
   }
   .hebergements {
@@ -1019,7 +1020,7 @@ input:-webkit-autofill {
     margin-top: 40px;
     margin-right: 10px;
     margin-bottom: 7px;
-    gap: 10px;
+
     justify-content: start;
     width: 75%;
   }
