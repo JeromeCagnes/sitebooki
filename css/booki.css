@@ -127,7 +127,7 @@ p {
   box-sizing: border-box;
 }
 
-.search-text input {
+input {
   width: 198px;
   height: 48px;
 
@@ -209,7 +209,7 @@ input:-webkit-autofill {
   margin-left: 23px;
   margin-bottom: 3px;
   align-items: center;
-  height: 10px;
+
   font-size: 18px;
 }
 .titre-filtres {
@@ -601,10 +601,11 @@ input:-webkit-autofill {
 
     height: 1.2rem;
   }
+
   .search-submit-large input {
-    width: 100%;
+    width: 117%;
     height: 50px;
-    margin-left: -4px;
+
     border: 1px solid #0065fc;
     border-radius: 0 15px 15px 0;
     background: #0065fc;
@@ -624,7 +625,7 @@ input:-webkit-autofill {
   }
   .search-submit-medium input {
     display: none;
-    width: 134px;
+    width: 100%;
     height: 50px;
     margin-left: -4px;
     border: 1px solid #0065fc;
@@ -654,14 +655,36 @@ input:-webkit-autofill {
     box-sizing: border-box;
 
     margin-left: 23px;
-    margin-bottom: 3px;
+    padding-top: 3px;
 
-    height: 10px;
+    height: 0px;
     font-size: 18px;
+  }
+  .box-filtre {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5px;
+  }
+
+  .filtres {
+    display: flex;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 6px 15px;
+    width: auto;
   }
   .list-filtre {
     margin-bottom: 5px;
-    gap: 14px;
+    margin-top: 33px;
+
+    margin-left: 22px;
+    width: 25%;
   }
   .textes {
     display: flex;
@@ -728,7 +751,7 @@ input:-webkit-autofill {
     margin-bottom: 20px;
   }
   .activites-cards img {
-    width: 105%;
+    width: 100%;
     height: 174px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -755,6 +778,7 @@ input:-webkit-autofill {
   .main-container {
     display: flex;
     flex-direction: column;
+    padding: 0%;
   }
   html,
   body {
@@ -783,6 +807,7 @@ input:-webkit-autofill {
     text-decoration: none;
     color: black;
     margin-left: 0px;
+    margin-bottom: 20px;
   }
   nav {
     display: flex;
@@ -794,7 +819,6 @@ input:-webkit-autofill {
     margin: 0px;
     margin-left: 0px;
     justify-content: space-around;
-    border-bottom: solid 2px lightgray;
     padding-bottom: 10px;
   }
 
@@ -805,17 +829,26 @@ input:-webkit-autofill {
     margin: 0px;
   }
   nav ul {
-    margin-bottom: 0px;
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+
+    padding-bottom: 2px;
   }
   nav li {
-    margin-left: 19px;
-    margin-right: 73px;
+    width: 35%;
+    margin-left: 54px;
+    margin-bottom: 9px;
   }
+  nav li:hover {
+    display: flex;
+    border-bottom: solid #0065fc 2px;
 
+    width: 50%;
+  }
   nav a:hover {
     color: #0065fc;
     border-top: 0px;
-    border-bottom: solid #0065fc 2px;
+
     padding-top: 20px;
     padding-bottom: 10px;
   }
@@ -838,7 +871,7 @@ input:-webkit-autofill {
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
     margin-left: 0px;
-    width: 50px;
+    width: 14%;
     height: 49px;
     border: 1px solid #f2f2f2;
     display: flex;
@@ -854,20 +887,21 @@ input:-webkit-autofill {
   .search-form {
     margin-top: 18px;
     margin-left: 0px;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
 
-  .search-text input {
+  input {
     width: 100%;
-    margin-right: 91px;
+    margin-right: 0px;
     height: 48px;
     border: 1px solid #f2f2f2;
     font-weight: 700;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
+    padding-left: 24px;
     box-sizing: border-box;
   }
 
@@ -903,22 +937,33 @@ input:-webkit-autofill {
   .box-filtre h2 {
     margin-left: 0px;
   }
+  .filtres {
+    display: flex;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    align-items: center;
 
+    gap: 26px;
+    font-weight: 700;
+    font-size: 15px;
+
+    height: 58px;
+  }
   .list-filtre {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
     margin-left: 0px;
     margin-right: 0px;
-    width: 78vw;
-    height: 100%;
+    width: 77vw;
+
     margin-bottom: 0px;
   }
 
   .list-filtre > li {
-    width: 43%;
+    width: 45%;
     box-sizing: border-box;
-    padding: 9px;
+    padding: 32px;
     justify-content: left;
   }
 
@@ -936,16 +981,15 @@ input:-webkit-autofill {
     background-color: white;
     border-radius: 20px;
     box-sizing: border-box;
-    margin-top: 0px;
-    margin-left: 8px;
-    width: 383px;
+
+    width: 100%;
   }
 
   .hebergements-cards .card {
     display: flex;
     margin-top: 30px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 10px;
 
     width: 90vw;
     box-sizing: border-box;
@@ -967,6 +1011,7 @@ input:-webkit-autofill {
   .main-container {
     display: flex;
     flex-direction: column;
+    padding: 0%;
   }
   .info-logement {
     display: flex;
@@ -986,9 +1031,9 @@ input:-webkit-autofill {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    width: 25px;
-    height: 25px;
-    margin-top: 4px;
+    width: 7%;
+    height: 28px;
+    margin-top: 0px;
     margin-bottom: 15px;
   }
 
@@ -1032,9 +1077,7 @@ input:-webkit-autofill {
     box-sizing: border-box;
   }
   .populaires-title {
-    margin-top: -18px;
-    margin-bottom: -39px;
-    margin-left: 0px;
+    width: 111%;
   }
 
   .populaires-cards img {
@@ -1053,11 +1096,11 @@ input:-webkit-autofill {
   }
   .populaires-cards .card {
     display: flex;
-    margin-top: 21px;
+    margin-top: 10px;
     margin-bottom: 20px;
     height: 153px;
     margin-left: -30px;
-    width: 215%;
+    width: 226%;
   }
   .populaires-cards .card-title {
     font-size: 16px;
@@ -1085,14 +1128,14 @@ input:-webkit-autofill {
   }
   .activites-cards .cards {
     display: flex;
-    width: 90vw;
+    width: 87vw;
 
-    margin-left: 0px;
+    margin-left: 40px;
     margin-bottom: 20px;
   }
   .activites-cards img {
     width: 100%;
-    height: 40vw;
+    height: 33vw;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     box-sizing: border-box;
@@ -1100,7 +1143,9 @@ input:-webkit-autofill {
   .activites-cards .card-title {
     font-size: 16px;
   }
-
+  .footer {
+    margin: 0px;
+  }
   .section-footer {
     display: flex;
     flex-direction: column;
