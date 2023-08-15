@@ -794,11 +794,12 @@ input:-webkit-autofill {
   header img {
     display: flex;
     flex-direction: column;
+    height: 1.4rem;
   }
   a {
     text-decoration: none;
     color: black;
-    padding: 21px 0 0 32px;
+    padding: -3px 0 0 32px;
     font-size: 16px;
   }
   .site-nav {
@@ -815,6 +816,15 @@ input:-webkit-autofill {
   .nav {
     flex: 1;
   }
+  nav a:hover {
+    color: #0065fc;
+    border-top: white;
+
+    padding-top: 20px;
+  }
+  .-active {
+    color: black;
+  }
 
   .nav-link {
     display: block;
@@ -823,9 +833,22 @@ input:-webkit-autofill {
     padding: 16px 0;
     position: relative;
   }
-
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #0065fc;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
   .nav-list::after {
-    background-color: var(--main-bg-color);
+    background-color: lightgray;
     bottom: 0;
     content: '';
     height: 3px;
@@ -964,8 +987,6 @@ input:-webkit-autofill {
   .article-raw {
     flex-direction: column;
     width: 100%;
-
-    margin-left: -26px;
   }
   .hebergements {
     order: 2;
@@ -975,7 +996,7 @@ input:-webkit-autofill {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     box-sizing: border-box;
-
+    margin-left: 0;
     width: 100%;
   }
 
@@ -985,7 +1006,7 @@ input:-webkit-autofill {
     margin-bottom: 0px;
     margin-left: 0px;
 
-    width: 90vw;
+    width: 100%;
     box-sizing: border-box;
   }
   .card {
@@ -1040,8 +1061,6 @@ input:-webkit-autofill {
   }
 
   .populaires {
-    width: 100%;
-
     border-radius: 20px;
     box-sizing: border-box;
     margin-top: 28px;
@@ -1070,7 +1089,8 @@ input:-webkit-autofill {
     box-sizing: border-box;
   }
   .populaires-title {
-    width: 111%;
+    width: 100%;
+    gap: 42%;
   }
 
   .populaires-cards img {
@@ -1098,6 +1118,7 @@ input:-webkit-autofill {
   .populaires-cards .card-title {
     font-size: 16px;
   }
+
   .title-section {
     margin-top: 60px;
     margin-bottom: 52px;
@@ -1121,9 +1142,9 @@ input:-webkit-autofill {
   }
   .activites-cards .cards {
     display: flex;
-    width: 87vw;
+    width: 95%;
 
-    margin-left: 42px;
+    margin-left: 16px;
     margin-bottom: 20px;
   }
   .activites-cards img {
