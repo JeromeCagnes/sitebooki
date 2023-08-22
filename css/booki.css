@@ -799,7 +799,7 @@ input:-webkit-autofill {
   a {
     text-decoration: none;
     color: black;
-    padding: -3px 0 0 32px;
+
     font-size: 16px;
   }
   .site-nav {
